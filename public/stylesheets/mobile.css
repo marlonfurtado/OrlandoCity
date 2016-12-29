@@ -77,4 +77,98 @@
   #btn-news-next{
     right: 15px;
   }
+
+  #estatisticas {
+    height: inherit;
+  }
+  #estatisticas p {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  #call-to-action {
+    margin-top: 69px;
+  }
+  #call-to-action p {
+    margin: 40px 15px;
+  }
+  #call-to-action h2 {
+    font-size: 28px;
+    margin: 0 10px;
+    margin-bottom: 8px;
+  }
+  #call-to-action hr {
+    border-width: 4px;
+  }
+  #call-to-action .btn {
+    min-width: 138px;
+  }
+  #call-to-action .btn-roxo {
+    float: left;
+  }
+  #call-to-action .btn-amarelo {
+    float: right;
+  }
+  #call-to-action .col-xs-6 {
+    padding: 0;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+  .copyright-mobile p {
+    font-size: 10px;
+    line-height: 0;
+  }
+  .copyright-mobile .pull-left {
+    float: inherit!important;
+  }
+  footer .row p {
+    text-align: right;
+    line-height: 20px;
+  }
+  footer .row p:first-child {
+    margin-top: 10px;
+  }
+  footer .text-roxo {
+    margin-right: 10px;
+  }
+  footer .row {
+    margin: 0;
+  }
+  footer .list-socials {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+  }
+  footer .col-md-10 {
+    padding: 0;
+  }
+  footer .list-socials a {
+    width: 44px;
+    height: 44px;
+    border-radius: 24px;
+  }
+  footer .list-socials i {
+    font-size: 28px;
+    margin: 8px;
+  }
+  footer .row-cinza-claro {
+    height: 157px;
+  }
+  footer .btn-footer {
+    width: 100%;
+    background-color: #11171D;
+    height: 44px;
+    line-height: 35px;
+  }
+  footer .col-xs-6 {
+    padding: 0;
+    padding-right: 5px;
+  }
+  footer .col-xs-6:last-child {
+    padding-right: 0;
+    padding-left: 5px;
+  }
+
 }
