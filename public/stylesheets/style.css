@@ -134,3 +134,8 @@
   margin: 0 auto;
   max-width: 400px;
 }
+
+#btn-bars, #btn-search,
+#btn-news-prev, #btn-news-next {
+  display: none;
+}

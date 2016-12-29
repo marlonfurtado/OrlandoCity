@@ -142,7 +142,3 @@ header #logotipo {
 #menu li.search .input-group{
   top: 10px;
 }
-
-#btn-bars, #btn-search {
-  display: none;
-}
