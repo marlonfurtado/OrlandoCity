@@ -10,9 +10,97 @@
   .header-black ul, #menu {
     display: none;
   }
+  header .header-black {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+  }
 
-  #logotipo {
-    left: 32%;
+  header #menu-mobile {
+    position: fixed;
+    top: 40px;
+    background-color: #FFF;
+    height: 100%;
+    width: 80%;
+    left: -80%;
+    transition: 0.3s;
+    z-index: 5;
+  }
+  header.open-menu #menu-mobile {
+    left: 0;
+  }
+  header.open-menu #menu-mobile ul {
+    margin: 20px;
+    margin-top: 100px;
+  }
+  header.open-menu #menu-mobile li {
+    text-align: center;
+    border-top: #CCC 1px solid;
+  }
+  header.open-menu #menu-mobile li:last-child {
+    border-bottom: #CCC 1px solid;
+  }
+  header.open-menu #menu-mobile li a {
+    color: #633392;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 16px;
+    padding: 18px;
+    display: block;
+  }
+  header.open-menu #menu-mobile-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+  }
+  header.open-menu #logotipo {
+    position: fixed;
+    top: 50px;
+    height: 86px;
+    width: 86px;
+    left: calc(37% - 33px);
+  }
+  header.open-menu .bar-close {
+    position: absolute;
+    bottom: 40px;
+    background-color: #633492;
+    height: 40px;
+    width: 100%;
+  }
+  header.open-menu .bar-close .btn-close {
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 22px;
+  }
+  header #input-search-mobile {
+    top: -40px;
+    transition: 0.5s;
+    position: fixed;
+    width: 70%;
+    left: 15%;
+    background-color: #000;
+    border: none;
+    height: 40px;
+    color: #FFF;
+    outline: 0;
+  }
+  header.open-search #input-search-mobile {
+    top: 0;
+  }
+
+  header.open-search #logotipo {
+    z-index: 9;
+  }
+  header #logotipo {
+    left: 28%;
+    z-index: 10;
+    transition: 0.3s;
   }
 
   #btn-bars, #btn-search {
@@ -71,7 +159,7 @@
     font-size: 48px;
     position: absolute;
     top: 130px;
-    z-index: 4;
+    z-index: 1;
     outline: 0;
   }
   #btn-news-next{
@@ -169,6 +257,9 @@
   footer .col-xs-6:last-child {
     padding-right: 0;
     padding-left: 5px;
+  }
+  footer .page-up {
+    display: inline-block!important;
   }
 
 }

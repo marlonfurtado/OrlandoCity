@@ -17,12 +17,30 @@
 
   <header>
 
+    <div id="menu-mobile-mask" class="visible-xs"></div>
+    <div id="menu-mobile" class="visible-xs">
+
+      <ul class="list-unstyled">
+        <li><a href="">Tickets</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Schedule</a></li>
+      </ul>
+
+      <div class="bar-close">
+        <button type="button" class="btn btn-close"><i class="fa fa-close"></i></button>
+      </div>
+
+    </div>
+
+
     <div class="container">
       <img id="logotipo" src="images/logo-orlando.png" width="150" height="150" alt="Logo Orlando City">
     </div>
 
     <div class="header-black">
       <div class="container">
+
+        <input type="search" id="input-search-mobile" class="visible-xs" placeholder="search...">
 
         <button id="btn-bars" type="button"><i class="fa fa-bars"></i></button>
         <button id="btn-search" type="button"><i class="fa fa-search"></i></button>
@@ -238,19 +256,19 @@
 
                 <ul class="list-unstyled list-socials">
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
                   </li>
-                  <li>
-                    <a href="#"><i class="fa fa-chevron-up"></i></a>
+                  <li class="page-up">
+                    <a href="#" id="page-up"><i class="fa fa-chevron-up"></i></a>
                   </li>
                 </ul>
               </div>
