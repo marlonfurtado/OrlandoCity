@@ -1,0 +1,92 @@
+<link rel="stylesheet" type="text/css" href="/plyr/plyr.css">
+<% include header %>
+
+
+<section>
+
+  <div id="call-to-action">
+    <div class="videos">
+      <div class="container">
+
+        <div class="row text-center">
+          <h2>Videos</h2>
+          <hr>
+        </div>
+
+        <div class="row">
+          <div class="container tamanho-video">
+            <video src="../videos/highlights.mp4" poster="../images/highlights.jpg" controls></video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="news" class="container" style="top: 0">
+
+    <div class="row text-center">
+      <h2>Latest Videos</h2>
+      <hr>
+    </div>
+
+    <button id="btn-news-prev" type="button"><i class="fa fa-angle-left"></i></button>
+    <button id="btn-news-next" type="button"><i class="fa fa-angle-right"></i></button>
+
+    <div class="row thumbnails">
+
+      <div class="item" data-video="highlights">
+        <div class="item-inner">
+          <img src="../images/highlights.jpg" alt="video">
+          <h3>Highlights</h3>
+        </div>
+      </div>
+
+      <div class="item" data-video="Orlando_City_Foundation_2015">
+        <div class="item-inner">
+          <img src="../images/Orlando_City_Foundation_2015.jpg" alt="video">
+          <h3>Orlando City Foundation</h3>
+        </div>
+      </div>
+
+      <div class="item" data-video="highlights">
+        <div class="item-inner">
+          <img src="../images/highlights.jpg" alt="video">
+          <h3>Highlights</h3>
+        </div>
+      </div>
+
+      <div class="item" data-video="Orlando_City_Foundation_2015">
+        <div class="item-inner">
+          <img src="../images/Orlando_City_Foundation_2015.jpg" alt="video">
+          <h3>Orlando City Foundation</h3>
+        </div>
+      </div>
+
+      <div class="item" data-video="highlights">
+        <div class="item-inner">
+          <img src="../images/highlights.jpg" alt="video">
+          <h3>Highlights</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<% include footer %>
+
+<script type="text/javascript" src="/plyr/plyr.js"></script>
+<script type="text/javascript">
+
+$('.thumbnails .item').on('click', function() {
+  $('video').attr({
+    'src': '../videos/' + $(this).data('video') + '.mp4',
+    'poster':'../images/' + $(this).data('video') + '.jpg'
+  });
+});
+
+plyr.setup();
+
+</script>

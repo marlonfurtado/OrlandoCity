@@ -135,10 +135,22 @@
   max-width: 400px;
 }
 
+
 #btn-bars, #btn-search,
 #btn-news-prev, #btn-news-next {
   display: none;
 }
 .page-up {
   display: none!important;
+}
+
+
+
+.tamanho-video {
+  width: 60%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+#call-to-action .videos {
+  margin-top: -75px;
 }
